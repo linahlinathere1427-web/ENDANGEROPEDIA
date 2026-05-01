@@ -1,0 +1,10 @@
+<!ELEMENT animals (animal+)>
+
+<!ELEMENT animal (title, image, region, status, description)>
+<!ATTLIST animal name CDATA #REQUIRED>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT region (#PCDATA)>
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT description (#PCDATA)>

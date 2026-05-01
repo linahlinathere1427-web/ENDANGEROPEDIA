@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= HERO PAGE ================= */
+.hero{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+/* ================= NAVBAR (HOME + ABOUT + SPECIES) ================= */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.logo{
+    width: 60px;
+}
+
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links ul li a:hover{
+    color: #2e8b57;
+}
+
+/* ================= OVERLAY (HOME) ================= */
+.overlay{
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.overlay h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.overlay p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* ================= SEARCH ================= */
+.search-box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.search-box input{
+    padding: 10px;
+    width: 250px;
+    border: none;
+    outline: none;
+}
+
+.search-box button{
+    padding: 10px 15px;
+    border: none;
+    background: #2e8b57;
+    color: white;
+    cursor: pointer;
+}
+
+/* ================= BUTTON ================= */
+.btn{
+    display: inline-block;
+    padding: 12px 25px;
+    background: #2e8b57;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #256f46;
+}
+
+/* ================= FOOTER ================= */
+.footer{
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 15px 20px;
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+.footer-content{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-content h3{
+    font-size: 16px;
+    margin: 0;
+}
+
+.footer-content p{
+    margin: 3px 0;
+    font-size: 12px;
+}
+
+.footer-contact h4{
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #2e8b57;
+}
+
+.footer-contact p{
+    margin: 2px 0;
+}
+
+.footer-bottom{
+    border-top: 1px solid #2e8b57;
+    margin-top: 10px;
+    padding-top: 8px;
+    text-align: center;
+    font-size: 11px;
+}
+
+/* ================= ABOUT PAGE ================= */
+body{
+    background: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),
+                url("images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.about-overlay{
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about-overlay h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.about-overlay p{
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.image-row{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.image-row img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.mission-section{
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(84,83,54,0.85);
+    color: white;
+}
+
+.mission-section h2{
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #737627;
+}
+
+.mission-section p{
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #f5f5f5;
+}
+
+.team-section{
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(95,111,59,0.75);
+}
+
+.team-section h2{
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.team-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-card{
+    width: 250px;
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.team-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.team-card h3{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.team-card p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ================= SPECIES PAGE ================= */
+.species-page{
+    background: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),
+                url("images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.species-header{
+    text-align: center;
+    padding-top: 120px;
+}
+
+.species-header h1{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.species-header p{
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.species-section{
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.species-section h2{
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #f5f5f5;
+}
+
+.species-table{
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(6px);
+}
+
+.species-table td{
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.species-table img{
+    width: 220px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* ================= DONATE PAGE ================= */
+.donate-page{
+    background: #c9b576;
+    color: #1c2437;
+}
+
+.donate-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    gap: 50px;
+}
+
+.donate-left{
+    width: 45%;
+}
+
+.donate-left h1{
+    font-size: 70px;
+    color: #1c2437;
+    margin-bottom: 40px;
+    line-height: 1.1;
+}
+
+.image-placeholder img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.donate-right{
+    width: 50%;
+    background: #767a3a;
+    padding: 45px;
+    border: 1px solid #3a161b;
+}
+
+.donation-type{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.donation-type button{
+    flex: 1;
+    padding: 28px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid #425144;
+    cursor: pointer;
+}
+
+.inactive-btn{
+    background: white;
+    color: 	#425144;
+}
+
+.active-btn{
+    background:#425144;
+    color: white;
+}
+
+.donation-message{
+    background: #3a3a3a;
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 35px;
+}
+
+.donation-message h2{
+    color:#f5f2f4;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.donation-message p{
+    color: #f5f2f4;
+    font-size: 18px;
+}
+
+.donation-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.donation-grid button{
+    padding: 30px 20px;
+    font-size: 26px;
+    font-weight: bold;
+    border: 1px solid #425144;
+    background: white;
+    color:	#425144;
+    cursor: pointer;
+}
+
+.donation-grid .selected{
+    background:	#425144;
+    color: white;
+}
+
+.honor-text{
+    color: 	#425144;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.donor-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.donor-table td{
+    border: 1px solid #cfcfcf;
+    padding: 18px;
+    font-size: 18px;
+}
+
+.donor-table input,
+.donor-table select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3a161b;
+    font-size: 16px;
+}
+
+.donate-btn{
+    width: 100%;
+    padding: 20px;
+    background:	#425144;
+    color: white;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.donate-btn:hover{
+    background: #005f8d;
+}

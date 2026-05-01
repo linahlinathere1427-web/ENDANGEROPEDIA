@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="animals.xsl"?>
+<!-- <!DOCTYPE animals SYSTEM "animals.dtd"> -->
+
+<animals>
+
+    <animal name="vaquita">
+        <title>Vaquita</title>
+        <image>vaquita.jpg</image>
+        <region>Global</region>
+        <status>Critically Endangered</status>
+        <description>Small porpoise found in the Gulf of California.</description>
+    </animal>
+
+    <animal name="java rhino">
+        <title>Javan Rhino</title>
+        <image>javan.jpg</image>
+        <region>Global</region>
+        <status>Critically Endangered</status>
+        <description>One of the rarest mammals in the world.</description>
+    </animal>
+
+    <animal name="oryx">
+        <title>Arabian Oryx</title>
+        <image>oryx.jpg</image>
+        <region>UAE</region>
+        <status>Vulnerable</status>
+        <description>A desert antelope once extinct in the wild.</description>
+    </animal>
+
+    <animal name="dugong">
+        <title>Dugong</title>
+        <image>dugong.jpg</image>
+        <region>UAE</region>
+        <status>Vulnerable</status>
+        <description>A marine mammal related to manatees.</description>
+    </animal>
+
+</animals>
